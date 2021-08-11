@@ -1,0 +1,7 @@
+#surefire_0
+#Wed Aug 11 12:33:55 WIB 2021
+basedir=C\:\\Users\\ulfa\\eclipse-workspace\\qaautomation
+user.dir=C\:\\Users\\ulfa\\eclipse-workspace\\qaautomation
+suiteXmlFile=apitest.xml
+env=prod
+localRepository=C\:\\Users\\ulfa\\.m2\\repository

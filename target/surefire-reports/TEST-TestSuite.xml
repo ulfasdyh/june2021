@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="17.726" tests="4" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ulfa\eclipse-workspace\qaautomation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="env" value="prod"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ulfa\eclipse-workspace\qaautomation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ulfa\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="suiteXmlFile" value="apitest.xml"/>
+    <property name="classworlds.conf" value="C:\Users\ulfa\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2306028122216644538.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Python38-32\Scripts\;C:\Program Files (x86)\Python38-32\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.1\bin;C:\bin;C:\Users\ulfa\AppData\Local\Microsoft\WindowsApps;;C:\Users\ulfa\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\ulfa"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="ulfa"/>
+    <property name="java.class.path" value="C:\Users\ulfa\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210603-1206\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test -DsuiteXmlFile=apitest.xml -Denv=prod -X"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\ulfa\eclipse-workspace\qaautomation\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="test" classname="june2021.qaautomation.APITest" time="0.056"/>
+  <testcase name="testConfigurationAPI" classname="june2021.qaautomation.APITest" time="2.274">
+    <failure message="expected [USD] but found [INR]" type="java.lang.AssertionError">java.lang.AssertionError: expected [USD] but found [INR]
+	at june2021.qaautomation.APITest.testConfigurationAPI(APITest.java:24)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://api-staging-builder.engineer.ai/configurations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authtoken=BzHRRz7vpcNWp_xHXAxh
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "currency": {
+        "data": {
+            "id": "1",
+            "type": "currency",
+            "attributes": {
+                "id": 1,
+                "name": "Indian Rupee",
+                "code": "INR",
+                "exchange_rate": 73.44705,
+                "multiplier": 0.3,
+                "symbol": "?",
+                "country_code": "IN",
+                "specing_price": 4999.0,
+                "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9aa714c49f7f467463f6/Rupee.svg",
+                "instant_spec_price": 4999.0,
+                "tax": 18,
+                "custom_prototype_price": 21185.5932203389,
+                "post_upfront_price": 40000.0
+            }
+        }
+    },
+    "currencies": {
+        "data": [
+            {
+                "id": "8",
+                "type": "currency",
+                "attributes": {
+                    "id": 8,
+                    "name": "Dirham",
+                    "code": "AED",
+                    "exchange_rate": 3.6732,
+                    "multiplier": 1.0,
+                    "symbol": "?.?",
+                    "country_code": "AE",
+                    "specing_price": 918.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/5ab3ab3c0b82ec47eda97d71/AED_0.5x.png",
+                    "instant_spec_price": 918.0,
+                    "tax": 0,
+                    "custom_prototype_price": 7499.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "3",
+                "type": "currency",
+                "attributes": {
+                    "id": 3,
+                    "name": "Euro",
+                    "code": "EUR",
+                    "exchange_rate": 0.846097,
+                    "multiplier": 1.0,
+                    "symbol": "€",
+                    "country_code": "FR",
+                    "specing_price": 220.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd4ef688f3ac67bbadfda8/euro-symbol__1_.png",
+                    "instant_spec_price": 220.0,
+                    "tax": 0,
+                    "custom_prototype_price": 1799.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "2",
+                "type": "currency",
+                "attributes": {
+                    "id": 2,
+                    "name": "US Dollars",
+                    "code": "USD",
+                    "exchange_rate": 1.0,
+                    "multiplier": 1.0,
+                    "symbol": "$",
+                    "country_code": "US",
+                    "specing_price": 250.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9aa814c49f7f467463f7/Dollar.svg",
+                    "instant_spec_price": 250.0,
+                    "tax": 0,
+                    "custom_prototype_price": 1999.0,
+                    "post_upfront_price": 500.0
+                }
+            },
+            {
+                "id": "6",
+                "type": "currency",
+                "attributes": {
+                    "id": 6,
+                    "name": "Ringgit",
+                    "code": "MYR",
+                    "exchange_rate": 4.1575,
+                    "multiplier": 1.0,
+                    "symbol": "RM",
+                    "country_code": "MY",
+                    "specing_price": 1000.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9aa614c49f7f467463f5/Ringgit.svg",
+                    "instant_spec_price": 1000.0,
+                    "tax": 0,
+                    "custom_prototype_price": 4299.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "5",
+                "type": "currency",
+                "attributes": {
+                    "id": 5,
+                    "name": "YEN",
+                    "code": "JPY",
+                    "exchange_rate": 106.3055,
+                    "multiplier": 1.0,
+                    "symbol": "¥",
+                    "country_code": "JP",
+                    "specing_price": 28374.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/5bdfefe51f0c640e7cfadee0/yen.png",
+                    "instant_spec_price": 28374.0,
+                    "tax": 0,
+                    "custom_prototype_price": 199999.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "7",
+                "type": "currency",
+                "attributes": {
+                    "id": 7,
+                    "name": "Canadian Dollar",
+                    "code": "CAD",
+                    "exchange_rate": 1.309634,
+                    "multiplier": 1.0,
+                    "symbol": "C$",
+                    "country_code": "CA",
+                    "specing_price": 96.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/5ce3b012b0a5a94038945727/Canada.png",
+                    "instant_spec_price": 96.0,
+                    "tax": 0,
+                    "custom_prototype_price": 2999.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "4",
+                "type": "currency",
+                "attributes": {
+                    "id": 4,
+                    "name": "Pounds",
+                    "code": "GBP",
+                    "exchange_rate": 0.75982,
+                    "multiplier": 1.0,
+                    "symbol": "£",
+                    "country_code": "GB",
+                    "specing_price": 190.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd4e9588f3ac67bbadfda0/pounds-symbol__1_.png",
+                    "instant_spec_price": 190.0,
+                    "tax": 0,
+                    "custom_prototype_price": 1599.0,
+                    "post_upfront_price": 400.0
+                }
+            },
+            {
+                "id": "9",
+                "type": "currency",
+                "attributes": {
+                    "id": 9,
+                    "name": "Saudi Riyal",
+                    "code": "SAR",
+                    "exchange_rate": 3.750623,
+                    "multiplier": 1.0,
+                    "symbol": "?.?",
+                    "country_code": "SA",
+                    "specing_price": 0.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/376/SAR__1_.png",
+                    "instant_spec_price": 0.0,
+                    "tax": 0,
+                    "custom_prototype_price": 2.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "10",
+                "type": "currency",
+                "attributes": {
+                    "id": 10,
+                    "name": "Singapore Dollar",
+                    "code": "SGD",
+                    "exchange_rate": 1.357797,
+                    "multiplier": 1.0,
+                    "symbol": "S$",
+                    "country_code": "SG",
+                    "specing_price": 0.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/381/Singapore_Dollar.svg",
+                    "instant_spec_price": 0.0,
+                    "tax": 0,
+                    "custom_prototype_price": 199.0,
+                    "post_upfront_price": 0.0
+                }
+            },
+            {
+                "id": "1",
+                "type": "currency",
+                "attributes": {
+                    "id": 1,
+                    "name": "Indian Rupee",
+                    "code": "INR",
+                    "exchange_rate": 73.44705,
+                    "multiplier": 0.3,
+                    "symbol": "?",
+                    "country_code": "IN",
+                    "specing_price": 4999.0,
+                    "icon_image_file_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9aa714c49f7f467463f6/Rupee.svg",
+                    "instant_spec_price": 4999.0,
+                    "tax": 18,
+                    "custom_prototype_price": 21185.5932203389,
+                    "post_upfront_price": 40000.0
+                }
+            }
+        ]
+    },
+    "platforms": {
+        "data": [
+            {
+                "id": "1",
+                "type": "platform",
+                "attributes": {
+                    "id": 1,
+                    "title": "Android",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "Operating system used by various brands (e.g. Samsung, HTC, LG).",
+                    "name": "Android",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9b0014c49f7f46746441/Android_blue.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd566788f3ac79a46ef20d/Android.png",
+                    "device": "Smartphone",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "2",
+                "type": "platform",
+                "attributes": {
+                    "id": 2,
+                    "title": "iOS",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "Operating system used by Apple products (e.g. iPhone, iPad)",
+                    "name": "iOS",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd56b888f3ac79a46ef210/ios_blue.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9b0114c49f7f46746442/Ios.png",
+                    "device": "Smartphone",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "3",
+                "type": "platform",
+                "attributes": {
+                    "id": 3,
+                    "title": "Web",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "App that is developed using web standards and accessed through a web browser.",
+                    "name": "Web",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd570d88f3ac79a46ef213/Web_xh.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/591a9b0214c49f7f46746443/Web.png",
+                    "device": "Desktop",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "5",
+                "type": "platform",
+                "attributes": {
+                    "id": 5,
+                    "title": "macOS",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "Operating system used by Apple desktops and laptops.",
+                    "name": "macOS",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59376fd714c49f5759f8cd9f/Mac_os_xh.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd585a88f3ac79a46ef21a/Macos.png",
+                    "device": "Desktop",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "6",
+                "type": "platform",
+                "attributes": {
+                    "id": 6,
+                    "title": "Windows",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "Operating system used by various desktop and laptop brands (e.g. Samsung, Acer, HP)",
+                    "name": "Windows",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd58d688f3ac79a46ef21d/Windows_os_xh.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/5937709e14c49f5759f8cda2/Windows_blue.png",
+                    "device": "Desktop",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "7",
+                "type": "platform",
+                "attributes": {
+                    "id": 7,
+                    "title": "watchOS",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "Operating system used by the Apple Watch.",
+                    "name": "watchOS",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd592088f3ac79a46ef220/Watch_os_xh.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/5938b0ca14c49f6a56325f79/Watch_blue.png",
+                    "device": "Watch",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "9",
+                "type": "platform",
+                "attributes": {
+                    "id": 9,
+                    "title": "Mobile Site",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "A dedicated web version for a mobile experience.",
+                    "name": "Mobile Site",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd59ac88f3ac79a46ef226/mobile.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/59fd59ac88f3ac79a46ef228/Mobile-site.png",
+                    "device": "Smartphone",
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            }
+        ]
+    },
+    "prototype_platforms": {
+        "data": [
+            {
+                "id": "10",
+                "type": "platform",
+                "attributes": {
+                    "id": 10,
+                    "title": "Mobile",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "",
+                    "name": null,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/379/mobile.png",
+                    "background": null,
+                    "device": null,
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "11",
+                "type": "platform",
+                "attributes": {
+                    "id": 11,
+                    "title": "Desktop",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 1.1,
+                    "description": "",
+                    "name": null,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/image/file/378/desktop.png",
+                    "background": null,
+                    "device": null,
+                    "device_icon": null
+                },
+                "relationships": {
+                    
+                }
+            }
+        ]
+    },
+    "speed": {
+        "data": [
+            {
+                "id": "2",
+                "type": "speed",
+                "attributes": {
+                    "id": 2,
+                    "title": "Speedy",
+                    "price_multiplier": 2.0,
+                    "week_multiplier": 0.75,
+                    "description": "Dev team on beast mode, keeping the quality intact.",
+                    "name": "Speed 1",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/speed/icon/57e0aff95cba2a27d6af278f/speedyspeed-icon.png"
+                }
+            },
+            {
+                "id": "5",
+                "type": "speed",
+                "attributes": {
+                    "id": 5,
+                    "title": "Fast",
+                    "price_multiplier": 1.5,
+                    "week_multiplier": 0.87,
+                    "description": "",
+                    "name": "Speed 2",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/speed/icon/59d619e4f6fa5354ff7d7181/fastspeed-icon.png"
+                }
+            },
+            {
+                "id": "1",
+                "type": "speed",
+                "attributes": {
+                    "id": 1,
+                    "title": "Standard",
+                    "price_multiplier": 1.0,
+                    "week_multiplier": 1.0,
+                    "description": "Efficient delivery with utmost quality.",
+                    "name": "Speed 3",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/speed/icon/57e0aff95cba2a27d6af2790/standardspeed-icon.png"
+                }
+            },
+            {
+                "id": "3",
+                "type": "speed",
+                "attributes": {
+                    "id": 3,
+                    "title": "Slow",
+                    "price_multiplier": 0.87,
+                    "week_multiplier": 1.12,
+                    "description": "Relaxed timeline, with focus on the best feature set & flows for the product.",
+                    "name": "Speed 4",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/speed/icon/57e0aff95cba2a27d6af2791/slowspeed-icon.png"
+                }
+            },
+            {
+                "id": "4",
+                "type": "speed",
+                "attributes": {
+                    "id": 4,
+                    "title": "Relaxed",
+                    "price_multiplier": 0.75,
+                    "week_multiplier": 1.25,
+                    "description": "",
+                    "name": "Speed 5",
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/speed/icon/59d619e7f6fa5354ff7d7188/relaxedspeed-icon.png"
+                }
+            }
+        ]
+    },
+    "build_phases": {
+        "data": [
+            {
+                "id": "1",
+                "type": "build_phase",
+                "attributes": {
+                    "id": 1,
+                    "title": "Product Roadmap",
+                    "description": "We help lay out the foundation of what you're building. A product roadmap is simply a guiding strategy document that makes execution hassle-free.",
+                    "price_multiplier": 0.1,
+                    "week_multiplier": 0.1,
+                    "index": 4,
+                    "position": 1,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/icon/58cbad7d14c49f1f2a318071/Roadmap_blue.png",
+                    "background": null
+                }
+            },
+            {
+                "id": "2",
+                "type": "build_phase",
+                "attributes": {
+                    "id": 2,
+                    "title": "Design",
+                    "description": "We combine visual principles, data, colour psychology, and decades' worth of experience to create aesthetic interfaces that bring results.",
+                    "price_multiplier": 0.2,
+                    "week_multiplier": 0.2,
+                    "index": 1,
+                    "position": 2,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/icon/587f162314c49f39f0d5b61d/Design_blue.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/background/587f162314c49f39f0d5b61d/https://s3.ap-south-1.amazonaws.com/assets.engineering.ai/background_mobile_app.png"
+                }
+            },
+            {
+                "id": "3",
+                "type": "build_phase",
+                "attributes": {
+                    "id": 3,
+                    "title": "Tailor-made Prototype",
+                    "description": "We design interactive prototypes for iPhone, iPad, Android, and Web. Creation of prototypes is more specific, measurable, quick, and intensive than just describing the design.",
+                    "price_multiplier": 0.1,
+                    "week_multiplier": 0.1,
+                    "index": 2,
+                    "position": 3,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/icon/587f162314c49f39f0d5b61e/Prototype_blue.png",
+                    "background": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/background/587f162314c49f39f0d5b61e/https://s3.ap-south-1.amazonaws.com/assets.engineering.ai/background_blog.png"
+                }
+            },
+            {
+                "id": "4",
+                "type": "build_phase",
+                "attributes": {
+                    "id": 4,
+                    "title": "MVP",
+                    "description": "We help design a Minimum Viable Product that has the basic features necessary to satisfy early customers and provide feedback for future development.",
+                    "price_multiplier": 0.6,
+                    "week_multiplier": 0.6,
+                    "index": 0,
+                    "position": 4,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/icon/5963a29c14c49f1407590ad5/MVP_blue.png",
+                    "background": null
+                }
+            },
+            {
+                "id": "5",
+                "type": "build_phase",
+                "attributes": {
+                    "id": 5,
+                    "title": "Full Build",
+                    "description": "We build a fully fledged product based on the features laid out in the specification document and the feedback received on the MVP.",
+                    "price_multiplier": 0.6,
+                    "week_multiplier": 0.6,
+                    "index": 3,
+                    "position": 5,
+                    "icon": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/build_phase/icon/587f162314c49f39f0d5b620/Full_blue.png",
+                    "background": null
+                }
+            }
+        ]
+    },
+    "country_code": "ID",
+    "valid_user": true,
+    "pricing_logic": "new",
+    "build_products": {
+        "data": [
+            {
+                "id": "2",
+                "type": "product",
+                "attributes": {
+                    "id": 2,
+                    "title": "Mobile Apps",
+                    "description": "Ease your app-building experience by choosing from our list of common mobile features. ",
+                    "type": "MobileWebApp",
+                    "background_color": "",
+                    "position": 1,
+                    "icon_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/mobile_web_app/icon/5901dd3a14c49f455d14bc0b/mobile.png"
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "1",
+                "type": "product",
+                "attributes": {
+                    "id": 1,
+                    "title": "Web",
+                    "description": "Choose from a list of pre-existing website models to create your own magic.",
+                    "type": "MobileWebApp",
+                    "background_color": "#61D035",
+                    "position": 2,
+                    "icon_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/mobile_web_app/icon/5901dd3a14c49f455d14bc0c/web.png"
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "6",
+                "type": "product",
+                "attributes": {
+                    "id": 6,
+                    "title": "Marketplace",
+                    "description": "Help buyers and sellers transact in real time.",
+                    "type": "MobileWebApp",
+                    "background_color": "#8B4CF7",
+                    "position": 3,
+                    "icon_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/mobile_web_app/icon/59376c3514c49f5759f8cd9a/marketplace.png"
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "7",
+                "type": "product",
+                "attributes": {
+                    "id": 7,
+                    "title": "Ecommerce",
+                    "description": "Launch your own e-commerce platform from our wealth of pre-built features.",
+                    "type": "MobileWebApp",
+                    "background_color": "#F5AC42",
+                    "position": 4,
+                    "icon_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/mobile_web_app/icon/59d63e68f6fa5349bbab560e/ecommerce.png"
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "5",
+                "type": "product",
+                "attributes": {
+                    "id": 5,
+                    "title": "Wearables",
+                    "description": "Select from a list of watch-specific features to tap into the self-connected world.",
+                    "type": "MobileWebApp",
+                    "background_color": "#4DB9C6",
+                    "position": 5,
+                    "icon_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/mobile_web_app/icon/5901dd3a14c49f455d14bc0d/wearables.png"
+                },
+                "relationships": {
+                    
+                }
+            },
+            {
+                "id": "3",
+                "type": "product",
+                "attributes": {
+                    "id": 3,
+                    "title": "Something else",
+                    "description": "Looking to build something we didn’t lay out here? Just tell us and we’ll take care of the rest.",
+                    "type": "CustomApp",
+                    "background_color": null,
+                    "position": 999,
+                    "icon_url": "https://bstudio-staging.azureedge.net/alpha-stg-assets/uploads/custom_app/icon/5915864714c49f3bda426a10/somethingelse.png"
+                },
+                "relationships": {
+                    
+                }
+            }
+        ]
+    },
+    "builder_partner": {
+        "data": {
+            "id": "1",
+            "type": "builder_partner",
+            "attributes": {
+                "id": 1,
+                "email": "pmadmin@engineer.ai",
+                "first_name": "Engineer AI",
+                "last_name": "",
+                "phone": "",
+                "partner_name": "EngineerAI",
+                "company_name": "EngineerAI",
+                "company_size": "",
+                "spoc_name": "",
+                "spoc_role": "",
+                "industry_type": "",
+                "website_link": "",
+                "is_verified": false,
+                "is_approved": true,
+                "logo_url": null,
+                "code": "e-ai",
+                "partner_multiplier": 1.0,
+                "partner_type": "sell_through",
+                "tnc_url": null,
+                "privacy_policy_url": null,
+                "nda_signed": true,
+                "signature_request_guid": "",
+                "signature_request_status": true,
+                "status": "uniq_code_sent",
+                "variance_percentage": 0.0,
+                "is_customer_allowed": true,
+                "small_logo_url": null,
+                "card_added": false,
+                "show_waitlist": false,
+                "builder_live_url": "https://staging-home.engineer.ai",
+                "frontend_url": "https://staging.engineer.ai",
+                "builder_now_url": "https://staging-now.engineer.ai",
+                "currencies": {
+                    "data": [
+                        
+                    ]
+                }
+            }
+        }
+    },
+    "multiplier_experiment": {
+        "data": {
+            "id": "20",
+            "type": "multiplier_experiment",
+            "attributes": {
+                "price_multiplier": "1.47",
+                "duration_multiplier": "0.75",
+                "code": "prodmulti",
+                "custom_price_multiplier": "0.67",
+                "id": "20"
+            }
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDashboardAPI" classname="june2021.qaautomation.APITest" time="3.172"/>
+  <testcase name="testInvalidCredentials" classname="june2021.qaautomation.APITest" time="1.613"/>
+</testsuite>

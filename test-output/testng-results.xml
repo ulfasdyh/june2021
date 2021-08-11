@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="5" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-22T02:12:34Z" name="Default suite" finished-at="2021-07-22T02:12:55Z" duration-ms="20893">
+    <groups>
+    </groups>
+    <test started-at="2021-07-22T02:12:34Z" name="Default test" finished-at="2021-07-22T02:12:55Z" duration-ms="20893">
+      <class name="june2021.qaautomation.AppTest">
+        <test-method is-config="true" signature="createChromeDriver()[pri:0, instance:june2021.qaautomation.AppTest@491b9b8]" started-at="2021-07-22T02:12:34Z" name="createChromeDriver" finished-at="2021-07-22T02:12:55Z" duration-ms="20853" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:251)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:41)
+at june2021.qaautomation.BaseWebTest.createChromeDriver(BaseWebTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'LAPTOP-OGIRURU6', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:86)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+... 35 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'LAPTOP-OGIRURU6', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:214)
+... 37 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'LAPTOP-OGIRURU6', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:245)
+at org.openqa.selenium.remote.service.DriverService.lambda$start$0(DriverService.java:199)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:13378/status] to be available after 20003 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:241)
+... 8 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+... 9 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChromeDriver -->
+        <test-method signature="testBrowserNavigation()[pri:0, instance:june2021.qaautomation.AppTest@491b9b8]" started-at="2021-07-22T02:12:55Z" name="testBrowserNavigation" finished-at="2021-07-22T02:12:55Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:251)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:41)
+at june2021.qaautomation.BaseWebTest.createChromeDriver(BaseWebTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'LAPTOP-OGIRURU6', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:86)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+... 35 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'LAPTOP-OGIRURU6', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:214)
+... 37 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'LAPTOP-OGIRURU6', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:245)
+at org.openqa.selenium.remote.service.DriverService.lambda$start$0(DriverService.java:199)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:13378/status] to be available after 20003 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:241)
+... 8 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+... 9 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserNavigation -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:june2021.qaautomation.AppTest@491b9b8]" started-at="2021-07-22T02:12:55Z" name="quitChromeDriver" finished-at="2021-07-22T02:12:55Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitChromeDriver -->
+      </class> <!-- june2021.qaautomation.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
